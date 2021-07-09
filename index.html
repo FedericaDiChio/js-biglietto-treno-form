@@ -5,18 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto treno</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- USER DATA  -->
-    <section>
+    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <section id="user-data">
         <!-- USER NAME -->
         <div>
-            <label for="name">Nome</label>
+            <label for="name">Nome e Cognome</label>
             <input type="text" id="name">
-        </div>
-        <div>
-            <label for="lastname">Cognome</label>
-            <input type="text" id="lastname">
         </div>
         <!-- USER KMs -->
         <div>
@@ -30,10 +28,21 @@
             <option value="adult">Maggiorenne</option>
             <option value="senior65">Over65</option>
         </select>
+        <div>
+            <button type="button" id="button">Genera biglietto</button>
+        </div>
     </section>
-    <!-- Button -->
-    <section>
-        <button type="button" id="button">Genera biglietto</button>
+    
+    <!-- PRINT TICKET  -->
+    <section id="your-ticket">
+        <h2>Il tuo biglietto</h2>
+        <ul>
+            <li>Nome passeggero: <span id="passenger-name"></span></li>
+            <li>Offerta: <span id="discount"></span></li>
+            <li>Carrozza:<span id="car-train"></span></li>
+            <li>Codice Treno:<span id="code-train"></span></li>
+            <li>Prezzo del biglietto: <span id="ticket-price"></span></li>
+        </ul>
     </section>
     <script src="./script.js"></script>
 </body>
