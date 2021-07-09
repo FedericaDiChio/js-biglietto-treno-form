@@ -18,6 +18,19 @@ button.addEventListener("click", function (){
     console.log(userKms.value);
     console.log(userAge.value);
     
+    var ticket = userKms.value * 0.21;
+    
+    if (userAge.value === "underage") {
+        ticket *= 0.8;
+        console.log(ticket)
+    }
+
+    else if (userAge.value === "senior65") {
+        ticket *= 0.6;
+        console.log(ticket)
+    }
 });
+
+
 
 
