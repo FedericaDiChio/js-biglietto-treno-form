@@ -7,6 +7,34 @@
     <title>Biglietto treno</title>
 </head>
 <body>
+    <!-- USER DATA  -->
+    <section>
+        <!-- USER NAME -->
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="lastname">Cognome</label>
+            <input type="text" id="lastname">
+        </div>
+        <!-- USER KMs -->
+        <div>
+            <label for="kms">Km da percorrere</label>
+            <input type="number" id="kms" value="15">
+        </div>
+        <!-- USER AGE -->
+        <label for="age">Fascia di età di appartenenza</label>
+        <select name="" id="age">
+            <option value="underage">Minorenne</option>
+            <option value="adult">Maggiorenne</option>
+            <option value="senior65">Over65</option>
+        </select>
+    </section>
+    <!-- Button -->
+    <section>
+        <button type="button" id="button">Genera biglietto</button>
+    </section>
     <script src="./script.js"></script>
 </body>
 </html>
