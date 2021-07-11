@@ -53,3 +53,4 @@ button.addEventListener("click", function (){
 
 });
 
+//* TO DO - parte css; Display-none biglietto; 
